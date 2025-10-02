@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beca Rita Cetina — Guía completa y detallada</title>
+  <meta name="description" content="Guía exhaustiva sobre la Beca Rita Cetina: origen, objetivos, requisitos, beneficios, impacto social, consejos prácticos y plantillas para aspirantes." />
+  <meta name="keywords" content="Beca Rita Cetina, beca educativa, requisitos beca, cómo aplicar, estatus, folio, impacto social" />
+  <meta name="author" content="Guía informativa Beca Rita Cetina" />
+  <style>
+    /* Reset / Base */
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent-1:#7c3aed;
+      --accent-2:#4c1d95;
+      --muted:#586174;
+      --soft:#eef2ff;
+      --radius:14px;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#1f2937;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.7;
+      font-size:16px;
+    }
+
+    /* Layout */
+    .site {
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+    }
+    header{background:linear-gradient(135deg,var(--accent-1),var(--accent-2));color:#fff;padding:48px 16px 60px;position:relative;overflow:hidden}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .brand{display:flex;gap:16px;align-items:center;justify-content:center;flex-direction:column}
+    .logo{
+      width:84px;height:84px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.06));
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#fff;box-shadow:0 8px 30px rgba(12,20,50,0.12)
+    }
+    header h1{font-size:34px;margin:18px 0 8px;text-align:center;line-height:1.05}
+    header p{max-width:860px;margin:0 auto;color:rgba(255,255,255,0.92);text-align:center;font-size:18px}
+    nav{margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:10px;transition:background .18s,transform .18s}
+    nav a:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px)}
+
+    /* decorative SVG */
+    .hero-orn{position:absolute;right:-80px;top:-40px;opacity:0.12;pointer-events:none}
+
+    main{flex:1;margin-top:-32px} /* pull up the first section */
+    section{max-width:var(--max-width);margin:0 auto;padding:48px 20px;border-radius:var(--radius)}
+    .section-card{background:var(--card);box-shadow:0 16px 40px rgba(12,20,50,0.06);padding:36px;border-radius:12px}
+    section.alt{background:linear-gradient(180deg,#fbfbff,#f3f0ff)}
+
+    /* headings */
+    h2{color:var(--accent-2);font-size:28px;margin-bottom:12px}
+    h3{color:var(--accent-1);font-size:20px;margin-top:18px;margin-bottom:8px}
+    p{margin-bottom:14px;color:#222}
+
+    /* grid cards */
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:linear-gradient(180deg, #fff, #fbfbff);padding:18px;border-radius:12px;border:1px solid rgba(10,20,50,0.03);box-shadow:0 6px 20px rgba(12,20,50,0.04)}
+    .card h4{margin:0 0 8px;color:var(--accent-2)}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* long content niceties */
+    .lead{font-size:18px;color:#0f1724;margin-bottom:16px}
+    .quote{background:var(--soft);padding:18px;border-radius:10px;border-left:4px solid var(--accent-1);margin:20px 0;font-style:italic;color:#111}
+    .checklist{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+    .check{display:flex;gap:12px;align-items:flex-start}
+    .check .dot{width:10px;height:10px;border-radius:50%;background:var(--accent-1);margin-top:6px}
+    pre.code{background:#0f1724;color:#e6eef8;padding:14px;border-radius:8px;overflow:auto;margin:12px 0;font-size:13px}
+
+    /* testimonials */
+    .testimonial{background:linear-gradient(180deg,#fff,#fcfbff);padding:16px;border-radius:10px;border:1px solid rgba(12,20,50,0.04)}
+    .testimonial p{margin:8px 0}
+    .testimonial .who{font-weight:600;color:var(--accent-2);font-size:14px}
+
+    /* FAQ */
+    .faq{margin-top:8px}
+    .faq dt{font-weight:700;margin-top:12px;color:#0f1724}
+    .faq dd{margin-left:0;margin-top:6px;color:#263244}
+
+    /* footer */
+    footer{background:linear-gradient(180deg,var(--accent-2),#3b1366);color:#fff;padding:28px 20px;text-align:center;border-top-left-radius:20px;border-top-right-radius:20px;margin-top:36px}
+    footer small{display:block;opacity:0.92}
+
+    /* responsive */
+    @media (max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){
+      header{padding:36px 12px 44px}
+      header h1{font-size:24px}
+      .grid-4,.grid-3,.grid-2{grid-template-columns:1fr}
+      section{padding:28px 16px}
+      .hero-orn{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="site" role="document">
+    <header role="banner" aria-label="Beca Rita Cetina encabezado">
+      <div class="wrap">
+        <div class="brand" aria-hidden="false">
+          <div class="logo" aria-hidden="true">RC</div>
+          <h1>Programa de la Beca Rita Cetina</h1>
+          <p style="max-width:880px;margin-top:10px;">Guía exhaustiva y práctica: origen, objetivos, requisitos, beneficios, impacto social y recomendaciones concretas para aspirantes. Información clara y actualizada para ayudarte a postular con confianza.</p>
+          <nav aria-label="Navegación de secciones" role="navigation" style="margin-top:18px">
+            <a href="#introduccion">Introducción</a>
+            <a href="#historia">Historia</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#como-aplicar">Cómo aplicar</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#consejos">Consejos</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </div>
+      </div>
+      <!-- Decorative SVG -->
+      <svg class="hero-orn" width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="210" cy="210" r="210" fill="#ffffff"/>
+      </svg>
+    </header>
+
+    <main role="main">
+      <!-- INTRODUCTION (extensive) -->
+      <section id="introduccion" aria-labelledby="intro-title">
+        <div class="section-card">
+          <h2 id="intro-title">Introducción — ¿Qué es la Beca Rita Cetina?</h2>
+          <p class="lead">La <a href="https://becasritacetinas.com.mx/">Beca Rita Cetina</a> nace como una iniciativa para potenciar el acceso a la educación entre jóvenes con potencial académico que enfrentan barreras económicas. Inspirada en la vida y obra de Rita Cetina Gutiérrez, la beca combina apoyo financiero con acompañamiento académico para favorecer no solo la continuidad de estudios, sino también la formación integral de las y los beneficiarios.</p>
+
+          <p>En contextos donde la desigualdad limita las oportunidades, los programas de becas actúan como palancas de movilidad social. La Beca Rita Cetina se diferencia por su enfoque en la calidad educativa: además de aliviar la carga económica, busca impulsar capacidades críticas, liderazgo y participación comunitaria. Por este motivo, sus convocatorias valoran tanto el expediente académico como el compromiso local del aspirante.</p>
+
+          <p>Esta guía tiene por objetivo proporcionar una visión amplia y práctica sobre el programa: explicamos su origen histórico, los objetivos estratégicos, los tipos de apoyos disponibles, los requisitos habituales de las convocatorias, el proceso de selección y los pasos concretos que puedes seguir para preparar una postulación sólida. También incluimos ejemplos, testimonios y plantillas que te ayudarán a presentar una candidatura competitiva.</p>
+
+          <p>Lee con atención cada sección y toma notas: la preparación anticipada y el orden en la entrega de documentos son factores determinantes en la evaluación. Si sigues los consejos y utilizas las plantillas que incluimos, estarás aumentando significativamente tus posibilidades de alcanzar el apoyo.</p>
+        </div>
+      </section>
+
+      <!-- HISTORY (detailed) -->
+      <section id="historia" class="alt" aria-labelledby="history-title">
+        <div class="section-card">
+          <h2 id="history-title">Historia y legado de Rita Cetina Gutiérrez</h2>
+          <p>Rita Cetina Gutiérrez (1846–1908) fue una educadora y promotora cultural cuya labor puso el énfasis en la formación de las mujeres como protagonistas de la vida intelectual y social. En una época marcada por limitaciones de género, fundó instituciones y sociedades literarias que abrieron espacios para la escritura, el pensamiento y la enseñanza femenina.</p>
+
+          <p>Su trabajo no se limitó a la instrucción técnica; Rita promovió la reflexión crítica, el debate público y la inclusión de las mujeres en actividades culturales. La influencia de su pensamiento fue local pero con ramificaciones que moldearon prácticas educativas en regiones vecinas. A través de iniciativas pioneras, contribuyó a que la educación dejara de ser un privilegio y pasara a constituir un derecho al alcance de más personas.</p>
+
+          <p>El legado de Rita Cetina se preserva hoy en la memoria educativa y en programas que llevan su nombre. La beca que honra su memoria surge con la intención de continuar su misión: crear condiciones para que quienes poseen talento y vocación educativa puedan estudiar y aportar a sus comunidades. Al recordar su trayectoria, la beca reivindica principios de equidad, esfuerzo y servicio público.</p>
+
+          <p>Además de su legado pedagógico, la figura de Rita sirve como referente simbólico para las beneficiarias y beneficiarios: su historia muestra que la educación puede transformar trayectorias personales y colectivas. La Beca Rita Cetina, por tanto, no es solo apoyo material, sino una invitación a formar parte de una tradición comprometida con el bien común.</p>
+
+          <div class="quote" aria-hidden="true">“Rita creyó que la educación liberaba la mente y fortalecía la comunidad. Honrar ese legado significa invertir en personas que, a su vez, invierten en los demás.”</div>
+        </div>
+      </section>
+
+      <!-- OBJECTIVES (expanded) -->
+      <section id="objetivos" aria-labelledby="objectives-title">
+        <div class="section-card">
+          <h2 id="objectives-title">Objetivos de la Beca</h2>
+
+          <p>La Beca Rita Cetina se sostiene sobre varios objetivos interrelacionados que orientan su diseño y sus criterios de selección. Comprender estos objetivos te ayudará a preparar una postulación alineada con lo que valoran los evaluadores.</p>
+
+          <div class="grid-4" style="margin-top:18px;">
+            <div class="card" aria-hidden="false">
+              <h4>1. Asegurar la continuidad educativa</h4>
+              <p>Evitar que estudiantes con rendimiento académico y talento abandonen sus estudios por limitaciones económicas. Esto incluye apoyo para matrícula, materiales y en ocasiones transporte.</p>
+            </div>
+            <div class="card">
+              <h4>2. Promover la igualdad</h4>
+              <p>Reducir brechas sociales de acceso a la educación, con atención especial a grupos subrepresentados o zonas con menor cobertura educativa.</p>
+            </div>
+            <div class="card">
+              <h4>3. Fomentar el mérito y la responsabilidad</h4>
+              <p>Reconocer el esfuerzo sostenido en el rendimiento académico y en la participación comunitaria, incentivando prácticas de responsabilidad social.</p>
+            </div>
+            <div class="card">
+              <h4>4. Impulsar la formación integral</h4>
+              <p>Complementar la formación formal con talleres, mentorías y experiencias que desarrollen habilidades blandas y liderazgo.</p>
+            </div>
+          </div>
+
+          <p style="margin-top:18px;">Cada objetivo se traduce en criterios de selección y en compromisos de seguimiento: quienes reciben la beca deben demostrar progreso académico y participación en actividades que amplifiquen su formación. Además, las convocatorias pueden priorizar áreas de estudio estratégicas según necesidades regionales o institucionales.</p>
+
+          <h3>¿Por qué estos objetivos importan?</h3>
+          <p>Porque una beca eficaz no debe limitarse a una entrega puntual de recursos; debe crear efectos multiplicadores. Al enfocarse en continuidad, equidad, mérito y formación integral, la Beca Rita Cetina busca generar beneficios sostenibles tanto para el individuo como para la comunidad en la que este actúa.</p>
+        </div>
+      </section>
+
+      <!-- BENEFITS (detailed) -->
+      <section id="beneficios" class="alt" aria-labelledby="benefits-title">
+        <div class="section-card">
+          <h2 id="benefits-title">Beneficios — Qué recibirás si eres beneficiario</h2>
+
+          <p>Los apoyos concretos varían según la convocatoria y la disponibilidad de fondos, pero a grandes rasgos la beca suele incluir una combinación de:</p>
+
+          <div class="grid-2" style="margin-top:12px">
+            <div class="card">
+              <h4>Apoyo económico</h4>
+              <p>Subsidio mensual o semestral dirigido a cubrir matrícula, materiales, transporte o gastos relacionados con la formación académica. Este apoyo busca aliviar la carga financiera y permitir que el estudiante concentre más energía en su rendimiento.</p>
+            </div>
+            <div class="card">
+              <h4>Capacitación y mentoría</h4>
+              <p>Acceso a talleres presenciales o en línea sobre habilidades blandas, técnicas de estudio, elaboración de CV, entrevistas y orientación vocacional. Además, mentorías con profesionales que guían el desarrollo académico y profesional.</p>
+            </div>
+          </div>
+
+          <p style="margin-top:14px;">Otros beneficios que suelen acompañar la beca incluyen la posibilidad de integrarse a una red de exbecarios, reconocimiento institucional y apoyos puntuales para movilidad o estancias académicas. El propósito es articular un paquete de apoyo que transforme la experiencia educativa de manera integral.</p>
+
+          <h3>Impacto directo en la vida académica</h3>
+          <p>Contar con un apoyo económico reduce la probabilidad de deserción y permite planificar a mediano plazo los estudios. De manera menos tangible, la beca también influye en la autoestima, el sentido de pertenencia y la percepción de futuro, factores clave para concluir con éxito una trayectoria educativa.</p>
+
+          <h3>Cómo la beca favorece la inserción profesional</h3>
+          <p>Las actividades de mentoría, la pertenencia a una red y la participación en proyectos formativos aumentan la empleabilidad de los beneficiarios. Al fortalecer competencias transversales y ofrecer oportunidades de visibilidad, la beca actúa como puente hacia prácticas profesionales y empleos de calidad.</p>
+        </div>
+      </section>
+
+      <!-- REQUIREMENTS (expanded) -->
+      <section id="requisitos" aria-labelledby="requirements-title">
+        <div class="section-card">
+          <h2 id="requirements-title">Requisitos frecuentes y documentación</h2>
+
+          <p>Las bases específicas dependen de la convocatoria, pero estas son las condiciones y documentos que con mayor frecuencia se solicitan:</p>
+
+          <ol>
+            <li><strong>Inscripción vigente:</strong> constancia o comprobante de inscripción en una institución educativa reconocida.</li>
+            <li><strong>Promedio mínimo:</strong> certificado de calificaciones con el promedio exigido (habitualmente 8.0/10 o equivalente), aunque existen convocatorias con criterios alternativos por necesidad económica.</li>
+            <li><strong>Documentación de ingresos:</strong> comprobantes que acrediten la situación económica del hogar (recibos, constancias laborales, carta de situación económica).</li>
+            <li><strong>Identificación oficial:</strong> copia de identificación nacional o pasaporte.</li>
+            <li><strong>Carta de motivos o ensayo:</strong> un texto personal que explique por qué el solicitante requiere la beca y cómo piensa utilizarla para su desarrollo.</li>
+            <li><strong>Cartas de recomendación:</strong> al menos una recomendación académica o comunitaria que respalde la candidatura.</li>
+            <li><strong>Comprobante de domicilio:</strong> documento reciente (no mayor a tres meses) que valide residencia.</li>
+          </ol>
+
+          <p>Es fundamental preparar los documentos con cuidado: escanearlos en alta calidad, nombrarlos de forma ordenada y cumplir con los formatos indicados en la convocatoria. La falta de un documento o la presentación de archivos ilegibles puede descalificar una solicitud en la primera fase administrativa.</p>
+
+          <h3>Consejos para la documentación</h3>
+          <ul>
+            <li>Digitaliza en PDF y usa nombres de archivo claros: por ejemplo, <code>Nombre_Apellido_Certificado.pdf</code>.</li>
+            <li>Si presentas evidencia alternativa (como cartas de ingresos), acompáñala de una breve nota explicativa.</li>
+            <li>Guarda copias de todo y organiza un índice con la lista de documentos enviados.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HOW TO APPLY (very detailed step-by-step) -->
+      <section id="como-aplicar" class="alt" aria-labelledby="howto-title">
+        <div class="section-card">
+          <h2 id="howto-title">Cómo aplicar — Proceso paso a paso</h2>
+
+          <p>El proceso de aplicación suele dividirse en cuatro etapas: preparación, envío, verificación y evaluación. A continuación se detalla cada etapa con recomendaciones prácticas.</p>
+
+          <h3>1. Preparación (4–6 semanas antes)</h3>
+          <p>Anticípate: revisa la convocatoria con detalle y arma un cronograma personal. Solicita con tiempo los documentos que dependen de terceros (constancias, cartas de recomendación). Redacta y revisa tu ensayo varias veces, pidiendo retroalimentación a un profesor o mentor.</p>
+
+          <h3>2. Envío (día de la postulación)</h3>
+          <p>Sube documentos en los formatos solicitados y completa el formulario con cuidado. Antes de enviar, verifica que los datos personales y académicos sean exactos. Conserva una captura de pantalla o PDF de la confirmación de envío: este comprobante suele contener el folio de tu solicitud.</p>
+
+          <h3>3. Verificación (2–6 semanas)</h3>
+          <p>En esta etapa el comité revisa la documentación. Si hay observaciones, normalmente contactan a los aspirantes para solicitar aclaraciones o documentos adicionales. Responde con prontitud y mantén un canal de comunicación claro (correo y teléfono).</p>
+
+          <h3>4. Evaluación y resultados</h3>
+          <p>La evaluación considera méritos académicos, ensayo y situación socioeconómica. En algunos casos hay entrevistas o pruebas complementarias. Los resultados pueden publicarse en listados por folio o por correo. Mantén tu folio y datos de contacto actualizados para recibir notificaciones.</p>
+
+          <div style="margin-top:18px">
+            <h3>Checklist práctico (lista de verificación)</h3>
+            <div class="checklist">
+              <div class="check"><span class="dot" aria-hidden="true"></span><div><strong>Documento de identidad</strong><div class="muted">Copia del documento oficial vigente.</div></div></div>
+              <div class="check"><span class="dot"></span><div><strong>Comprobante de estudios</strong><div class="muted">Último certificado o boleta de calificaciones.</div></div></div>
+              <div class="check"><span class="dot"></span><div><strong>Documentos de ingresos</strong><div class="muted">Comprobantes que respalden la situación económica.</div></div></div>
+              <div class="check"><span class="dot"></span><div><strong>Carta de motivos</strong><div class="muted">Redactada y revisada; evita la copia literal de otras fuentes.</div></div></div>
+              <div class="check"><span class="dot"></span><div><strong>Cartas de recomendación</strong><div class="muted">Firmadas y con datos de contacto del emisor.</div></div></div>
+            </div>
+          </div>
+
+          <h3>Formato del ensayo — guía rápida</h3>
+          <p>Tu ensayo debe ser conciso, honesto y específico. Evita frases generales y enfoca en hechos: proyectos en los que participaste, responsabilidades asumidas y el impacto que tu formación tendrá en tu entorno. Un ensayo de 500–800 palabras suele ser suficiente.</p>
+
+          <pre class="code" aria-hidden="true">Ejemplo de estructura:
+1. Introducción breve (presentación personal y objetivo).
+2. Desarrollo (experiencias relevantes y logros).
+3. Necesidad (razón por la que requieres la beca).
+4. Impacto (cómo usarás la beca y cómo contribuirás a tu comunidad).
+5. Cierre (agradecimiento y compromiso).</pre>
+
+        </div>
+      </section>
+
+      <!-- IMPACT (deep) -->
+      <section id="impacto" aria-labelledby="impact-title">
+        <div class="section-card">
+          <h2 id="impact-title">Impacto social y ejemplos de transformación</h2>
+
+          <p>La inversión en educación tiene retornos que van más allá de lo individual. Las becas generan capital humano, incrementan la productividad regional y favorecen la cohesión social. La Beca Rita Cetina ha registrado casos en los que jóvenes becarios han liderado proyectos comunitarios, fundado iniciativas educativas locales y mejorado indicadores de inserción laboral en sus regiones.</p>
+
+          <p>Un impacto tangible se observa en la reducción de la tasa de deserción: estudiantes con apoyo financiero tienen una probabilidad significativamente mayor de completar sus estudios. Además, las mentorías y talleres contribuyen a que los beneficiarios desarrollen habilidades para el empleo, emprendimiento y liderazgo.</p>
+
+          <h3>Historias ilustrativas (ficticias pero verosímiles)</h3>
+          <div class="testimonial">
+            <p><strong>María L. — Beneficiaria, 2019</strong></p>
+            <p>“Recibir la beca me permitió terminar mi carrera y trabajar en programas de alfabetización en mi comunidad. Lo más valioso no fue solo el apoyo económico, sino la red de personas y oportunidades que encontré.”</p>
+            <p class="who">María finalizó la licenciatura en educación y lidera hoy talleres locales.</p>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="testimonial">
+            <p><strong>Carlos R. — Beneficiario, 2020</strong></p>
+            <p>“La beca fue el impulso que necesitaba para realizar una estancia de investigación. Gracias a ello publiqué un proyecto con impacto local y ahora colaboro en iniciativas de desarrollo tecnológico.”</p>
+            <p class="who">Carlos trabaja en proyectos de energía sustentable en su región.</p>
+          </div>
+
+          <p style="margin-top:14px;">Estos ejemplos muestran cómo la beca puede catalizar trayectorias: desde fortalecer habilidades técnicas hasta despertar vocaciones de servicio. El retorno social se produce cuando los beneficiarios aplican lo aprendido para mejorar su entorno.</p>
+        </div>
+      </section>
+
+      <!-- TIPS (practical and numerous) -->
+      <section id="consejos" class="alt" aria-labelledby="tips-title">
+        <div class="section-card">
+          <h2 id="tips-title">Consejos prácticos para aumentar tus posibilidades</h2>
+
+          <p>A continuación encontrarás recomendaciones concretas y accionables que te ayudarán a presentar una solicitud sólida y competitiva.</p>
+
+          <h3>1. Comienza con tiempo</h3>
+          <p>No esperes a la última semana. Reúne documentos, solicita cartas y redacta tu ensayo con margen para revisiones. La organización reduce errores y demuestra responsabilidad.</p>
+
+          <h3>2. Ensayo auténtico y específico</h3>
+          <p>Cuenta hechos concretos: proyectos en los que participaste, roles asumidos y resultados. Evita generalidades. Un ensayo honesto que muestre aprendizajes reales suele pesar más que uno rebosante de adjetivos.</p>
+
+          <h3>3. Cartas de recomendación útiles</h3>
+          <p>Solicítalas a personas que te conozcan académica o profesionalmente. Pídeles que mencionen cualidades observables (liderazgo, constancia, impacto) y ejemplos específicos que respalden su recomendación.</p>
+
+          <h3>4. Presentación impecable</h3>
+          <p>Escanea documentos en buena resolución, nómbralos correctamente y verifica que no haya páginas cortadas o información ilegible. Usa PDF cuando sea posible y respeta el límite de tamaño indicado en la convocatoria.</p>
+
+          <h3>5. Sigue instrucciones al pie de la letra</h3>
+          <p>Si piden un formato, una extensión o datos específicos, ajústate. El incumplimiento de una instrucción básica puede resultar en eliminación por criterios administrativos.</p>
+
+          <h3>6. Conserva tu comprobante y folio</h3>
+          <p>Después de enviar tu postulación, guarda la confirmación. El folio es la referencia principal para seguimiento y aclaraciones.</p>
+
+          <h3>7. Practica para la entrevista</h3>
+          <p>Si la convocatoria incluye entrevistas, prepara respuestas claras sobre tu trayectoria, motivaciones y planes futuros. Ensaya con un amigo o mentor y pide retroalimentación.</p>
+
+          <h3>8. Mantén comunicación profesional</h3>
+          <p>Responde puntualmente a solicitudes de información y utiliza correos electrónicos formales. La comunicación ordenada refleja seriedad institucional.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" aria-labelledby="faq-title">
+        <div class="section-card">
+          <h2 id="faq-title">Preguntas frecuentes (FAQ)</h2>
+          <dl class="faq">
+            <dt>¿Quién puede aplicar a la Beca Rita Cetina?</dt>
+            <dd>Estudiantes inscritos en instituciones reconocidas que cumplan con los requisitos de la convocatoria (promedio, situación económica, documentación completa).</dd>
+
+            <dt>¿La beca cubre todos los gastos de estudio?</dt>
+            <dd>Depende de la modalidad: generalmente cubre una parte significativa de matrícula y materiales, pero puede no cubrir todos los gastos personales. Revisa la convocatoria específica para conocer alcances.</dd>
+
+            <dt>¿Puedo aplicar si vivo fuera de la región originaria de Rita Cetina?</dt>
+            <dd>Algunas convocatorias aceptan postulantes a nivel nacional; otras son regionales. Consulta las bases de cada convocatoria para confirmar elegibilidad territorial.</dd>
+
+            <dt>¿Qué pasa si mi estatus aparece como “pendiente”?</dt>
+            <dd>Normalmente significa que falta documentación o se está realizando una verificación. En ese caso, atiende la solicitud del comité cuanto antes para completar tu expediente.</dd>
+
+            <dt>¿La beca exige contrapartidas?</dt>
+            <dd>Algunas modalidades requieren que los beneficiarios participen en actividades comunitarias o sesiones de formación. Si existe alguna contrapartida, esto se especificará en la convocatoria.</dd>
+
+            <dt>Para más información visita nuestra siguiente web donde te explicamos como aplicar a la beca rita cetina</dt>
+          </dl>
+        </div>
+      </section>
+
+      <!-- FINAL CONCLUSION -->
+      <section aria-labelledby="conclusion-title">
+        <div class="section-card">
+          <h2 id="conclusion-title">Conclusión — Un llamado al esfuerzo y la comunidad</h2>
+
+          <p>La Beca Rita Cetina es más que una ayuda económica: es una inversión en personas que pueden transformar sus vidas y las de quienes les rodean. Si estás pensando en postular, recuerda que más allá del resultado, el proceso de preparación te fortalece: organizas documentos, clarificas objetivos y construyes herramientas que te servirán en otros contextos académicos y profesionales.</p>
+
+          <p>Si recibes la beca, aprovéchala plenamente: participa en las actividades formativas, comparte lo aprendido y mantente conectado con la red de exbecarios. La idea es multiplicar el beneficio y crear un efecto positivo y sostenido en tu comunidad.</p>
+
+          <p>Finalmente, conviene recordar el espíritu de Rita Cetina: la educación como acto de libertad y responsabilidad. Cada trayectoria que se completa gracias a esta beca reafirma la convicción de que el conocimiento es una fuerza para el bien común.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap">
+        <p style="font-weight:600">© 2025 Beca Rita Cetina</p>
+        <small class="muted">Esta página es una guía informativa y de apoyo para aspirantes. Revisa siempre la convocatoria oficial de cada convocatoria para información específica y actualizada.</small>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
